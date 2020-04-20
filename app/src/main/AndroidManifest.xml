@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="dev.yadev.samsungdualsimfix">
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:icon="@drawable/logo"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme">
+        <meta-data
+                android:name="xposedmodule"
+                android:value="true" />
+        <meta-data
+                android:name="xposeddescription"
+                android:value="This module allows users to install Dual sims and SD card without having error messages on Samsung's Phones" />
+        <meta-data
+                android:name="xposedminversion"
+                android:value="30" />
+    </application>
+</manifest>

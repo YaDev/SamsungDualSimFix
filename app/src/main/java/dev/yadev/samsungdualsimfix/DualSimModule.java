@@ -20,7 +20,7 @@ public class DualSimModule implements IXposedHookLoadPackage {
                     findAndHookMethod(targetClass, lpparam.classLoader, targetMethod, new XC_MethodReplacement() {
                         @Override
                         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-                            return null;
+                            return false;
                         }
                     });
                 }
